@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         int selection;
-        Prompt currentPrompt = new Prompt();
+        Prompt prompt = new Prompt();
         Entries currentEntries = new Entries();
         Entry currentEntry = new Entry();
         do
@@ -29,9 +29,9 @@ class Program
 
             if (selection == 1)
             {
-                int promptNumber = currentPrompt.GeneratePromptNumber();
-                currentPrompt.DisplayPrompt(promptNumber);
-                currentEntry.GetResponse(currentPrompt, promptNumber);
+                string currentPrompt = prompt.GeneratePrompt();
+                Console.WriteLine($"\n{currentPrompt}");
+                currentEntry.GetEntry(currentPrompt);
                 currentEntries.DuplicateAndAdd(currentEntry);
             }
             else if (selection == 2)

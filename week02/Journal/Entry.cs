@@ -4,11 +4,11 @@ public class Entry
     public string response = "";
     public string date = "";
 
-    public void GetResponse(Prompt currentPrompt, int promptNumber)
+    public void GetEntry(string currentPrompt)
     {
         response = Console.ReadLine();
-        
-        prompt = currentPrompt.prompts[promptNumber];
+
+        prompt = currentPrompt;
 
         DateTime currentTime = DateTime.Now;
         date = currentTime.ToShortDateString();

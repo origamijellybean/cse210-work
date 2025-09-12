@@ -9,16 +9,10 @@ public class Prompt
     "What was the strongest emotion I felt today?",
     "If I had one thing I could do over today, what would it be?"];
 
-    public int GeneratePromptNumber()
+    public string GeneratePrompt()
     {
         Random random = new Random();
         int promptNumber = random.Next(0, prompts.Count);
-        return promptNumber;
+        return prompts[promptNumber];
     }
-    public void DisplayPrompt(int promptNumber)
-    {
-        Console.WriteLine();
-        Console.WriteLine(prompts[promptNumber]);
-    }
-
 }

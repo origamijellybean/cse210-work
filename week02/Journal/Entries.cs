@@ -5,7 +5,7 @@ public class Entries
     public List<List<string>> entries = [];
     public void Save()
     {
-
+        
     }
     public void Load()
     {
