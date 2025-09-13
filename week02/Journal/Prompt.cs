@@ -12,7 +12,8 @@ public class Prompt
     "What is one lesson you could teach your future family?",
     "What is a life lesson you learned today?",
     "What was something good you did for someone today?",
-    "What was something good someone did for you today?"];
+    "What was something good someone did for you today?",
+    "What is something happening in your life right now?"];
 
     public string GeneratePrompt()
     {
