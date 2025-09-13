@@ -7,7 +7,12 @@ public class Prompt
     "What was the best part of my day?",
     "How did I see the hand of the Lord in my life today?",
     "What was the strongest emotion I felt today?",
-    "If I had one thing I could do over today, what would it be?"];
+    "If I had one thing I could do over today, what would it be?",
+    "What is a childhood memory you can remember from today?",
+    "What is one lesson you could teach your future family?",
+    "What is a life lesson you learned today?",
+    "What was something good you did for someone today?",
+    "What was something good someone did for you today?"];
 
     public string GeneratePrompt()
     {

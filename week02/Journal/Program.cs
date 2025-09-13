@@ -40,11 +40,11 @@ class Program
             }
             else if (selection == 3)
             {
-                //load from file
+                currentEntries.Load();
             }
             else if (selection == 4)
             {
-                //save to file
+                currentEntries.Save();
             }
         } while (selection != 5);
     }
