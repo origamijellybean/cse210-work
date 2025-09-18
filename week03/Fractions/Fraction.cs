@@ -43,7 +43,7 @@ public class Fraction
 
     public double GetDecimalValue()
     {
-        return Convert.ToDouble(_top) / Convert.ToDouble(_bottom);
+        return (double)_top / (double)_bottom;
     }
     
 
