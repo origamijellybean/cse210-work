@@ -8,7 +8,12 @@ public class Scripture
     private List<int> _scrambleList = [];
     private int _scrambleCounter = 0;
 
-    public Scripture()
+    public Scripture(string scripture)
+    {
+        _scripture = scripture;
+        CreateWordListAndRandomList();
+    }
+    private void CreateWordListAndRandomList()
     {
         _wordList = _scripture.Split(" ");
         foreach (string word in _wordList)
@@ -19,7 +24,6 @@ public class Scripture
         _scrambleList = Enumerable.Range(0, _wordList.Count()).ToList();
         _scrambleList = _scrambleList.OrderBy(n => random.Next()).ToList();
     }
-
     public void DisplayScripture()
     {
         foreach (Word word in _words)
@@ -28,10 +32,9 @@ public class Scripture
         }
         Console.WriteLine();
     }
-
+    //returns false if it is already finished removing words.
     public bool RemoveWords()
     {
-
         if (_words.Count <= _scrambleCounter)
         {
             return false;
@@ -45,12 +48,11 @@ public class Scripture
         }
         return true;
     }
-
     public string GetScripture()
     {
         return _scripture;
     }
-    public void SetScripture(string newScripture)
+    public void SetNewScripture(string newScripture)
     {
         _scripture = newScripture;
     }
