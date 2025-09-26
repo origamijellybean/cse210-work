@@ -2,17 +2,17 @@ public class Product
 {
     private string _name;
     private int _ID;
-    private float _price;
+    private double _price;
     private int _quantity;
 
-    public Product(string name, int ID, float price, int quantity)
+    public Product(string name, int ID, double price, int quantity)
     {
         _name = name;
         _ID = ID;
         _price = price;
         _quantity = quantity;
     }
-    public float TotalProductCost()
+    public double TotalProductCost()
     {
         return _price * _quantity;
     }
@@ -25,7 +25,7 @@ public class Product
     {
         return _ID;
     }
-    public float GetPrice()
+    public double GetPrice()
     {
         return _price;
     }
