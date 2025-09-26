@@ -38,7 +38,7 @@ class Program
         }
         List<double>gamesOrderCost = games.CalculateOrderCost();
         Console.WriteLine($"Shipping: ${gamesOrderCost[1]:F2}");
-        Console.WriteLine($"Total Cost: ${gamesOrderCost[0]:F2}");
+        Console.WriteLine($"Total Cost: ${(gamesOrderCost[0]+gamesOrderCost[1]):F2}");
 
         Console.WriteLine();
         string sportsShippingString = sports.ShippingLabel();
@@ -58,7 +58,7 @@ class Program
         }
         List<double> sportsOrderCost = sports.CalculateOrderCost();
         Console.WriteLine($"Shipping: ${sportsOrderCost[1]:F2}");
-        Console.WriteLine($"Total Cost: ${sportsOrderCost[0]:F2}");
+        Console.WriteLine($"Total Cost: ${(sportsOrderCost[0]+sportsOrderCost[1]):F2}");
 
 
 
