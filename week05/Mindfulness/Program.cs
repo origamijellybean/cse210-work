@@ -1,3 +1,5 @@
+//I added a class called RandomSelection for random lists for the questions in the reflection activity, to not repeat the questions.
+
 using System;
 using System.ComponentModel.Design;
 
