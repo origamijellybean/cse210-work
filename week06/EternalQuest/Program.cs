@@ -8,7 +8,7 @@ class Program
     static void Main(string[] args)
     {
         GoalManager goalManager = new GoalManager();
-        int menuChoice = 0;
+        int menuChoice;
         List<string> newGoal;
         bool loaded = false;
         string currentDirectory = Directory.GetCurrentDirectory();

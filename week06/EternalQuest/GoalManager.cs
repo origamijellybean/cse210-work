@@ -5,11 +5,15 @@ public class GoalManager
 {
     private int _score;
     private List<string> _levels = ["Newbie",
-                                    "Novice",
-                                    "Developer",
-                                    "Intermediate",
+                                    "Apprentice",
+                                    "Adept",
+                                    "JourneyMan",
+                                    "Specialist",
                                     "Veteran",
-                                    "Master"];
+                                    "Expert",
+                                    "Master",
+                                    "GrandMaster",
+                                    "Legend"];
     private int _level = 0;
     private List<Goal> _goals = [];
     private List<List<string>> _goalsData = [];
