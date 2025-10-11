@@ -18,7 +18,7 @@ class Program
         {
             if (loaded)
             {
-                Console.WriteLine("Level: {}");
+                Console.WriteLine($"\nLevel {goalManager.CalculateLevel()}: {goalManager.GetLevel()}");
                 Console.WriteLine($"Points: {goalManager.CalculateScore()} ");
             }
             Console.WriteLine("\nPlease select an option below:");
@@ -30,6 +30,7 @@ class Program
             Console.WriteLine("6. Load goals");
             Console.WriteLine("7. Quit");
             menuChoice = int.Parse(Console.ReadLine());
+            Console.WriteLine();
             if (menuChoice == 1)
             {
                 goalManager.DisplayGoals();
@@ -43,9 +44,9 @@ class Program
                 int menu2Choice = 0;
                 newGoal = [];
                 Console.WriteLine("What type of goal would you like to create?");
-                Console.WriteLine("1. Simple Goal.");
-                Console.WriteLine("2. Eternal Goal.");
-                Console.WriteLine("3. Checklist Goal.");
+                Console.WriteLine("1. Simple Goal");
+                Console.WriteLine("2. Eternal Goal");
+                Console.WriteLine("3. Checklist Goal");
                 while (menu2Choice < 1 || menu2Choice > 3)
                 {
                     menu2Choice = int.Parse(Console.ReadLine());

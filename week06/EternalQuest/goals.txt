@@ -1,2 +1,2 @@
-S|Macbeath|go to macbeath with family|0|10
-C|temple power|go to temple 6 times|0|50|6|250
+C|temple power|go to temple 6 times|6|50|6|250
+S|Macbeath|GO to machbeaths with family|1|10
