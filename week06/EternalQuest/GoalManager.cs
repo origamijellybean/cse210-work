@@ -22,9 +22,6 @@ public class GoalManager
         {
             _goals.Add(new ChecklistGoal(newGoal));
         }
-
-
-        //determine which type of goal it is by first one, create a goal, add to list
     }
 
     public void DisplayGoals()
@@ -36,13 +33,13 @@ public class GoalManager
             goalNumber += 1;
         }
     }
-    public void DeleteGoal()
+    public void DeleteGoal(int goalChoice)
     {
-
+        _goals.RemoveAt(goalChoice - 1);
     }
-    public void RecordEvent()
+    public void RecordEvent(int goalChoice)
     {
-
+        _goals[goalChoice - 1].RecordEvent();
     }
     public int CalculateScore()
     {

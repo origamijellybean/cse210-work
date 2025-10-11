@@ -10,7 +10,7 @@ public class EternalGoal : Goal
     }
     public override void RecordEvent()
     {
-
+        _timesCompleted += 1;
     }
 
     public override string GetData()

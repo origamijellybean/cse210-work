@@ -32,7 +32,10 @@ class Program
             menuChoice = int.Parse(Console.ReadLine());
             if (menuChoice == 1)
             {
-
+                goalManager.DisplayGoals();
+                Console.WriteLine("Which goal would you like to record?");
+                int goalChoice = int.Parse(Console.ReadLine());
+                goalManager.RecordEvent(goalChoice);
 
             }
             else if (menuChoice == 2)
@@ -77,7 +80,10 @@ class Program
             }
             else if (menuChoice == 3)
             {
-
+                goalManager.DisplayGoals();
+                Console.WriteLine("Which goal would you like to delete?");
+                int goalChoice = int.Parse(Console.ReadLine());
+                goalManager.DeleteGoal(goalChoice);
             }
             else if (menuChoice == 4)
             {

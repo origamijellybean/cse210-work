@@ -15,12 +15,12 @@ public class ChecklistGoal : Goal
     }
     public override void RecordEvent()
     {
-
+        _timesCompleted += _timesCompleted < _maxTimesCompleted? 1 : 0;
     }
 
     public override string GetData()
     {
-        return $"[{(_timesCompleted == _maxTimesCompleted ? "X" : " ")}] Checklist Goal: {_goalName}({_goalDescription}) Times completed: {_timesCompleted}/{_maxTimesCompleted} Points earned: {(_scoreValue * _timesCompleted) + (_timesCompleted == _maxTimesCompleted? _bonusPointValue : 0)}/{(_scoreValue * _maxTimesCompleted) + _bonusPointValue}";
+        return $"[{(_timesCompleted == _maxTimesCompleted ? "X" : " ")}] Checklist Goal: {_goalName} ({_goalDescription}) Times completed: {_timesCompleted}/{_maxTimesCompleted} Points earned: {(_scoreValue * _timesCompleted) + (_timesCompleted == _maxTimesCompleted? _bonusPointValue : 0)}/ {(_scoreValue * _maxTimesCompleted) + _bonusPointValue}";
     }
 
     public override string GetStoreData()

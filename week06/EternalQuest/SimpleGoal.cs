@@ -10,7 +10,7 @@ public class SimpleGoal : Goal
     }
     public override void RecordEvent()
     {
-
+        _timesCompleted = 1;
     }
 
     public override string GetData()
