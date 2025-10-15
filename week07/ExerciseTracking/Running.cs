@@ -1,7 +1,6 @@
 public class Running : Activity
 {
     private double _distance;
-
     public Running(string date, double activityLengthInMinutes, double distance)
     {
         _date = date;
